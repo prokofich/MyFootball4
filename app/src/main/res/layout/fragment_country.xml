@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.CountryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#ff0000"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:textStyle="italic"
+        android:text="нажмите на страну для перехода к ее лигам"
+        android:layout_height="100dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_country_rv"
+        android:layout_width="400dp"
+        android:layout_height="535dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_country" />
+
+    <TextView
+        android:id="@+id/id_country_exit"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="выйти"
+        android:background="#ff0000"
+        android:textColor="@color/white"
+        android:textSize="37dp"
+        android:textStyle="italic" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.TeamFragment">
+
+    <LinearLayout
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="130dp" >
+
+        <ImageView
+            android:id="@+id/id_team_image"
+            android:layout_width="136dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="La Liga"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="bottom"
+                android:textSize="30dp"
+                android:id="@+id/id_team_league_name"
+                android:layout_width="match_parent"
+                android:layout_marginTop="14dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:text="2021/2022"
+                android:gravity="bottom"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:id="@+id/id_team_seasons"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_team_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_team" />
+
+
+</LinearLayout>

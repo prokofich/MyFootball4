@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="130dp">
+
+    <ImageView
+        android:id="@+id/id_item_league_image"
+        android:layout_width="139dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_item_league_name"
+            android:layout_width="214dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom"
+            android:text="Ла Лига"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_item_league_seasons"
+            android:layout_width="214dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="2020/2021"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

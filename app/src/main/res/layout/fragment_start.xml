@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:layout_height="match_parent"
+    tools:context=".view.StartFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="Заходи,если интересуешься футболом!Лиги,команды,игроки и многое другое ждет тебя!"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <ProgressBar
+        android:id="@+id/id_start_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="338dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/white"
+        android:progressTint="@color/white"
+        android:scaleY="3" />
+
+
+
+</LinearLayout>
