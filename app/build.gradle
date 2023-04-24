@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Prokofich\\football4keystorepath3.jks')
+            storePassword '1602nikita'
+            keyAlias 'key2'
+            keyPassword '1602nikita'
+        }
+    }
     namespace 'com.example.football4'
     compileSdk 33
 
@@ -21,8 +29,6 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-
-            shrinkResources true
 
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

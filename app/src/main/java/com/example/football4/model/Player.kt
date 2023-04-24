@@ -1,9 +1,11 @@
 package com.example.football4.model
 
 import android.os.Parcelable
+import androidx.annotation.Keep
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
+@Keep
 data class Player(
     val player_key: String,
     val player_id : String,

@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
@@ -41,10 +42,12 @@ class CountryFragment : Fragment() {
         countryViewModel.getCountry()
         countryViewModel.Country.observe(viewLifecycleOwner){ list->
             list.body().let{adapterCountry.setList(it!!)}
+            //Toast.makeText(requireContext(),"${list.body()!![0].country_id}",Toast.LENGTH_SHORT).show()
         }
 
         id_country_exit.setOnClickListener {
-            MAIN.finish()
+            //MAIN.finish()
+            MAIN.finishAffinity()
         }
 
         requireActivity().onBackPressedDispatcher.addCallback(this) {

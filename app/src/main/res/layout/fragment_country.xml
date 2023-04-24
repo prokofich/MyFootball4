@@ -21,7 +21,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/id_country_rv"
         android:layout_width="400dp"
-        android:layout_height="535dp"
+        android:layout_height="531dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -32,7 +32,7 @@
         android:layout_width="160dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
         android:gravity="center"
         android:text="выйти"
         android:background="#ff0000"
