@@ -23,7 +23,7 @@
             android:layout_marginTop="15dp"
             android:gravity="bottom"
             android:text="Ла Лига"
-            android:textColor="@color/black"
+            android:textColor="#2100a4"
             android:textSize="23dp"
             android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
             android:layout_marginLeft="10dp"
             android:gravity="left"
             android:text="2020/2021"
-            android:textColor="@color/black"
+            android:textColor="#2100a4"
             android:textSize="20dp"
             android:textStyle="bold" />
 

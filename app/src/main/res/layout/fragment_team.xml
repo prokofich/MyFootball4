@@ -8,17 +8,12 @@
     tools:context=".view.TeamFragment">
 
     <LinearLayout
-        android:background="#ff0000"
+        android:background="#f80505"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="130dp" >
 
-        <ImageView
-            android:id="@+id/id_team_image"
-            android:layout_width="136dp"
-            android:layout_height="95dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"

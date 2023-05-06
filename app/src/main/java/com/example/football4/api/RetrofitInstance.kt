@@ -7,7 +7,7 @@ object RetrofitInstance {
 
     private val retrofit by lazy {
         Retrofit.Builder()
-            .baseUrl("https://apiv3.apifootball.com/")
+            .baseUrl("http://37.27.9.28/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

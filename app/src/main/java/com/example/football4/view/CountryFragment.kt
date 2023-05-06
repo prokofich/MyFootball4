@@ -6,21 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.activity.addCallback
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.football4.MAIN
 import com.example.football4.R
-import com.example.football4.adapter.CountryAdapter
-import com.example.football4.model.item_countryItem
-import com.example.football4.viewmodel.CountryViewModel
 import kotlinx.android.synthetic.main.fragment_country.*
 
 class CountryFragment : Fragment() {
-
-    lateinit var recyclerViewCountry: RecyclerView
-    lateinit var adapterCountry: CountryAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,20 +25,60 @@ class CountryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val countryViewModel = ViewModelProvider(this)[CountryViewModel::class.java]
+        Glide.with(requireContext())
+            .load("http://37.27.9.28/4/emblemaengland.png")
+            .into(id_country_england_image)
 
-        recyclerViewCountry = id_country_rv
-        adapterCountry = CountryAdapter(requireContext())
-        recyclerViewCountry.adapter = adapterCountry
+        Glide.with(requireContext())
+            .load("http://37.27.9.28/4/emblemaspain.png")
+            .into(id_country_spain_image)
 
-        countryViewModel.getCountry()
-        countryViewModel.Country.observe(viewLifecycleOwner){ list->
-            list.body().let{adapterCountry.setList(it!!)}
-            //Toast.makeText(requireContext(),"${list.body()!![0].country_id}",Toast.LENGTH_SHORT).show()
+        Glide.with(requireContext())
+            .load("http://37.27.9.28/4/emblemafrance.png")
+            .into(id_country_france_image)
+        0
+        Glide.with(requireContext())
+            .load("http://37.27.9.28/4/emblemagermany.png")
+            .into(id_country_germany_image)
+
+        Glide.with(requireContext())
+            .load("http://37.27.9.28/4/emblemaitaly.png")
+            .into(id_country_italy_image)
+
+
+        id_country_england_name.setOnClickListener {
+            var bundle = Bundle()
+            bundle.putString("Country","England")
+            MAIN.navController.navigate(R.id.action_countryFragment_to_leagueFragment,bundle)
         }
 
+        id_country_spain_name.setOnClickListener {
+            var bundle = Bundle()
+            bundle.putString("Country","Spain")
+            MAIN.navController.navigate(R.id.action_countryFragment_to_leagueFragment,bundle)
+        }
+
+        id_country_france_name.setOnClickListener {
+            var bundle = Bundle()
+            bundle.putString("Country","France")
+            MAIN.navController.navigate(R.id.action_countryFragment_to_leagueFragment,bundle)
+        }
+
+        id_country_germany_name.setOnClickListener {
+            var bundle = Bundle()
+            bundle.putString("Country","Germany")
+            MAIN.navController.navigate(R.id.action_countryFragment_to_leagueFragment,bundle)
+        }
+
+        id_country_italy_name.setOnClickListener {
+            var bundle = Bundle()
+            bundle.putString("Country","Italy")
+            MAIN.navController.navigate(R.id.action_countryFragment_to_leagueFragment,bundle)
+        }
+
+
+
         id_country_exit.setOnClickListener {
-            //MAIN.finish()
             MAIN.finishAffinity()
         }
 
@@ -58,14 +90,5 @@ class CountryFragment : Fragment() {
 
     }
 
-
-
-    companion object{
-        fun clickToCountry(countryItem:item_countryItem){
-            val bundle = Bundle()
-            bundle.putParcelable("country",countryItem)
-            MAIN.navController.navigate(R.id.action_countryFragment_to_leagueFragment,bundle)
-        }
-    }
 
 }

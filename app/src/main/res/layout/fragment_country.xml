@@ -9,35 +9,153 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="112dp"
         android:layout_gravity="center"
+        android:background="#f80505"
         android:gravity="center"
-        android:background="#ff0000"
+        android:text="click on a country to go to its leagues"
         android:textColor="@color/white"
-        android:textSize="27dp"
-        android:textStyle="italic"
-        android:text="нажмите на страну для перехода к ее лигам"
-        android:layout_height="100dp"/>
+        android:textSize="42dp"
+        android:textStyle="italic" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/id_country_rv"
-        android:layout_width="400dp"
-        android:layout_height="531dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_country" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/id_country_england_image"
+            android:layout_width="113dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/id_country_england_name"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="England"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/id_country_spain_image"
+            android:layout_width="113dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/id_country_spain_name"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Spain"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/id_country_france_image"
+            android:layout_width="113dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/id_country_france_name"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="France"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/id_country_germany_image"
+            android:layout_width="113dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/id_country_germany_name"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Germany"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/id_country_italy_image"
+            android:layout_width="113dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/id_country_italy_name"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Italy"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/id_country_exit"
         android:layout_width="160dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="22dp"
         android:gravity="center"
-        android:text="выйти"
-        android:background="#ff0000"
+        android:text="exit"
+        android:background="#f80505"
         android:textColor="@color/white"
-        android:textSize="37dp"
+        android:textSize="39dp"
         android:textStyle="italic" />
 
 

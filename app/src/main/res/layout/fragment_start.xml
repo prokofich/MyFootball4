@@ -13,7 +13,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:textStyle="italic"
-        android:text="Заходи,если интересуешься футболом!Лиги,команды,игроки и многое другое ждет тебя!"
+        android:text="Come in if you are interested in football!Leagues and teams are already waiting for you!"
         android:textColor="@color/white"
         android:textSize="22dp" />
 

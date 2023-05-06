@@ -20,7 +20,7 @@
         android:layout_marginLeft="10dp"
         android:gravity="left"
         android:text="Англия"
-        android:textColor="@color/black"
+        android:textColor="#2100a4"
         android:textSize="35dp"
         android:textStyle="bold" />
 
